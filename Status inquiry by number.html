@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>
+
+        Status inquiry by number
+
+    </title>
+    <link href="/external/css/torodc.css?v=2" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Header Control for standard header look and feel -->
+    <img id="ctl00_HeaderImage" src="/images/bluebar.gif" alt="Blue site header"
+        style="border-width:0px;height:15px;width:100%;" />
+    <div class="logointernal">
+        <a id="A1" href="http://www.nzta.govt.nz" target="_blank" class="logo">
+            <img id="ctl00_LogoImage" class="logo" alt="NZ Transport Agency" src="/images/logo.gif"
+                style="border-width:0px;height:60px;width:251px;" />
+        </a>
+    </div>
+    <!-- end logointernal -->
+    <div class="user">
+
+        FONTERRA LIMITED, FONTERRA CO-OPERATIVE GROUP LTD </div>
+    <div class="headingtransentry">
+        <h1 class="pageheading">
+            TORO
+            -
+
+            Status inquiry by number
+
+        </h1>
+        <ul>
+            <li class="menuFirst">
+                <a href="/Account/About">About</a>
+            </li>
+            <li class="menuTop">
+                <a href="/Account/Contact">Contact</a>
+            </li>
+            <li class="menuTop">
+                <a href="/Account/TermsAndConditions">Terms &amp; Conditions</a>
+            </li>
+            <li class="menuTop">
+                <a href="/Account/Registration">Registration</a>
+            </li>
+            <li class="menuTop">
+                <a href="/Account/Help">Help</a>
+            </li>
+        </ul>
+    </div>
+    <!-- start of right nav -->
+    <div class="padding">
+    </div>
+    <div class="padding">
+    </div>
+    <div class="padding">
+    </div>
+    <div class="padding">
+    </div>
+
+    <ul class="leftNav">
+        <li class="nav">
+            <a href="/Transaction/StatusInquiryByNumber">DL status inquiry</a>
+        </li>
+        <li class="active-select">Search by DL number</li>
+        <li class="active">
+            <a href="/Transaction/StatusInquiryByName">Search by name and<br /> date of birth</a>
+        </li>
+        <li class="nav">
+            <a href="/Transaction/OperatorDLList">Operator DL list</a>
+        </li>
+        <li class="nav">
+            <a href="/Transaction/DLListMaintenance">DL list maintenance</a>
+        </li>
+        <li class="nav">
+            <a href="/Account/ChangePassword">Change your password</a>
+        </li>
+        <li class="nav">
+            <a href="/Account/Logout">Logout</a>
+        </li>
+    </ul>
+
+    <div class="content">
+
+        <form action="/Transaction/StatusInquiryByNumber" method="post">
+            <div class="inputBox">
+                <div class="LabelTextShaded">DL number</div>
+                <input id="dlNumber" maxLength="8" name="dlNumber" type="text" value="" />
+
+                <br><br>
+
+                <div class="LabelTextShaded">DL version number</div>
+                <input id="dlvNumber" maxLength="3" name="dlvNumber" type="text" value="" />
+
+                <br><br>
+
+                <div class="LabelTextShaded">Surname</div>
+                <input id="surname" maxLength="30" name="surname" type="text" value="" />
+
+                <br><br>
+
+                <div class="padding"></div>
+
+                <div class="searchButton">
+                    <input id="Search" name="Search" src='/images/search.gif' type="image" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

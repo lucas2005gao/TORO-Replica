@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NZ Transport Agency - Status Inquiry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div style="
+        width: 100%;
+        background-color: #00456A;
+        height: 10px;
+        border-width: 0px;
+        height: 15px;
+        width: 100%;
+      "></div>
+
+  <div class="header_wrapper">
+    <header style="width: 25%">
+      <div class="logo_section">
+        <img src="./Fonterra_Flat.png" alt="NZ Transport Agency" width="80px" />
+        <div>
+          <h1>FONTERRA TRANSPORT AGENCY</h1>
+          <h2>PEOPLE SOLUTIONS</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="headingtransentry" style="width: 45%; text-align: start;">
+      <h1 style="color:black; font-size: 18px;">TORO - Status inquiry by number</h1>
+      <ul>
+        <li class="menuTop">
+          <a href="/Account/About">About</a>
+        </li>
+        <li class="menuTop">
+          <a href="/Account/Contact">Contact</a>
+        </li>
+        <li class="menuTop">
+          <a href="/Account/TermsAndConditions">Terms &amp; Conditions</a>
+        </li>
+        <li class="menuTop">
+          <a href="/Account/Registration">Registration</a>
+        </li>
+        <li class="menuTop">
+          <a href="/Account/Help">Help</a>
+        </li>
+      </ul>
+    </div>
+    <div style="font-size: 12px;">FONTERRA LIMITED, FONTERRA CO-OPERATIVE GROUP LTD</div>
+  </div>
+
+  <main style="margin-top: 100px; padding:20px 100px;">
+    <section id="loginTabContent" class="content" style=" display:flex; flex-direction: row;">
+      <form action="#" method="post" style="width:700px; display:flex; gap: 10px; flex-direction: column;">
+        <div class="login-container">
+          <p>By clicking the SUBMIT button you are consenting to be bound by the TORO terms and conditions.</p>
+          <p>If you are registered to use Driver Check please <a href="#">click here</a>.</p>
+          <div style="height:40px"></div>
+
+          <div style="width:500px">
+
+            <div class="input-group">
+              <label for="login">Login</label>
+              <input type="text" id="username" name="username" maxlength="8" style="width:200px;">
+            </div>
+            <div class="input-group">
+              <label for="login">Password</label>
+              <input type="password" id="password" name="password" maxlength="12" style="width:200px;">
+            </div>
+
+            <div class="form-group action-buttons">
+              <button id="submitBtn" type="submit">SUBMIT</button>
+              <button type="reset">RESET</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="searchTabContent" class="content">
+      <div style=" display:flex; flex-direction: row;">
+        <nav style="width: 30%">
+          <ul class="sidenav">
+            <li><a id="searchTabLink">DL status inquiry</a></li>
+            <li>Search by DL number</li>
+            <li>Search by name and date of birth</li>
+            <li>Operator DL list</li>
+            <li><a id="managedlBtn">DL list maintenance</a></li>
+            <li>Change your password</li>
+            <li><a class="logoutBtn">Logout</a></li>
+          </ul>
+
+        </nav>
+
+        <div style="width:70%">
+          <form action="#" method="post" style="width:500px; display:flex; gap: 10px; flex-direction: column;">
+            <div class="input-group">
+              <label for="dlNumber">DL number</label>
+              <input type="text" id="dlNumber" name="dlNumber" />
+            </div>
+
+            <div class="input-group">
+              <label for="dlVersionNumber">DL version number</label>
+              <input type="text" id="dlvNumber" name="dlvNumber" />
+            </div>
+            <div class="input-group">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name="surname" />
+            </div>
+
+            <button id="Search" name="Search" type="submit">SEARCH</button>
+          </form>
+        </div>s
+      </div>
+    </section>
+
+
+    <section id="manageTabContent" class="content" style=" display:flex; flex-direction: row;">
+      <div style=" display:flex; flex-direction: row;">
+        <nav style="width: 30%">
+          <ul class="sidenav">
+            <li><a id="searchTabLink">DL status inquiry</a></li>
+            <li>Operator DL list</li>
+            <li><a id="managedlBtn">DL list maintenance</a></li>
+            <li>Change your password</li>
+            <li><a class="logoutBtn">Logout</a></li>
+          </ul>
+        </nav>
+        <div style="width:70%">
+          <form style="width:500px; display:flex; gap: 10px; flex-direction: column;">
+            <div class="input-group">
+              <label for="dl-number">DL number</label>
+              <input type="text" id="dl-number" name="dlNumber">
+            </div>
+            <div class="input-group">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name="surname">
+            </div>
+            <div class="input-group" style="justify-content: left;">
+              <input type="radio" id="add" name="operatorListAction" value="add">
+              <label for="add">Add drivers licence number to operator list</label><br>
+            </div>
+            <div class="input-group" style="justify-content: left;">
+              <input type="radio" id="remove" name="operatorListAction" value="remove">
+              <label for="remove">Remove drivers licence number from operator list</label>
+            </div>
+            <p style="font-weight: bold;font-size: large;">PLEASE NOTE: The licence status will not be provided at the
+              time the licence
+              is added. To find the status
+              you will need to do a DL status inquiry.</p>
+            <div class="form-group action-buttons">
+              <button type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+    </section>
+
+  </main>
+</body>
+<script>
+
+  const contentSections = document.querySelectorAll('.content');
+  const navItems = document.querySelectorAll('#navigation a');
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+
+    navItems.forEach((navItem) => {
+      navItem.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default anchor behavior
+
+        // Get the content ID from the clicked item
+        const contentId = navItem.getAttribute('data-content');
+
+        // Hide all content sections
+        contentSections.forEach((section) => {
+          section.style.display = 'none';
+        });
+
+        // Show the clicked content section
+        const activeSection = document.getElementById(contentId);
+        if (activeSection) {
+          activeSection.style.display = 'block';
+        }
+
+        // Update the active navigation class
+        navItems.forEach((item) => {
+          item.classList.remove('active');
+        });
+        navItem.classList.add('active');
+      });
+    });
+
+    // Optionally hide all sections and show the first one on load
+    contentSections.forEach((section) => {
+      section.style.display = 'none';
+    });
+    if (contentSections.length > 0) {
+      contentSections[0].style.display = 'block';
+    }
+    if (navItems.length > 0) {
+      navItems[0].classList.add('active');
+    }
+  });
+
+  // Function to hide all sections and show a specific one
+  function showSection(sectionId) {
+    // Hide all content sections
+    contentSections.forEach((section) => {
+      section.style.display = 'none';
+    });
+
+    // Show the specific section
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Get the submit button and manage button
+  const submitBtn = document.getElementById('submitBtn');
+  const managedlBtn = document.getElementById('managedlBtn');
+  const searchTabLink = document.getElementById('searchTabLink');
+
+  // Add event listener to the submit button
+  submitBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    showSection('searchTabContent');
+  });
+
+  // Add event listener to the manage button
+  managedlBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    showSection('manageTabContent');
+  });
+
+  searchTabLink.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    showSection('searchTabContent');
+  });
+
+  // Get all logout buttons
+  const logoutBtns = document.getElementsByClassName('logoutBtn');
+
+  // Add event listener to all logout buttons
+  Array.from(logoutBtns).forEach((logoutBtn) => {
+    logoutBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent the default anchor behavior
+      showSection('loginTabContent');
+    });
+  });
+</script>
+
+</html>
